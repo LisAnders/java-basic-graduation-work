@@ -30,6 +30,10 @@ public class HttpRequest {
         return body;
     }
 
+    public HttpMethod getMethod() {
+        return method;
+    }
+
     public HttpRequest(String rawRequest) {
         this.rawRequest = rawRequest;
         this.parseRequestLine();
